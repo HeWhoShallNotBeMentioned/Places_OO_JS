@@ -34,13 +34,17 @@
               <label for="new-notes">Notes</label>
               <input type="text" class="form-control" id="new-notes">
             </div>
-            <!-- <div class="form-group">
-              <label for="new-state">State</label>
-              <input type="text" class="form-control new-state">
-            </div> -->
+            <div class="form-group">
+              <label for="new-landmark-name">Landmark Name</label>
+              <input type="text" class="form-control new-landmark-name">
+            </div>
+            <div class="form-group">
+              <label for="new-landmark-desc">Landmark Description</label>
+              <input type="text" class="form-control new-landmark-desc">
+            </div>
           </div>
         </div>
-        <!-- <span class="btn btn-primary" id="add-places">Another Place</span> -->
+      <span class="btn btn-primary" id="add-landmark">Another Landmark</span>
         <button type="submit" class="btn">Add</button>
           </form>
 
@@ -53,13 +57,11 @@
                 <p>Location: <span class="location"></span></p>
                 <p>Year: <span class="year"></span></p>
                 <p>Notes: <span class="notes"></span></p>
+              
+                <p>Landmarks: </p>
+                <ul id="landmarks">
 
-
-                <!-- <p>Last name: <span class="last-name"></span></p>
-                <p>Addresses: </p>
-                <ul id="addresses">
-
-                </ul> -->
+                </ul>
               </div>
             </div>
           </ul>
