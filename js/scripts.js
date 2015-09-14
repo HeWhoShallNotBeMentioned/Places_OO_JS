@@ -1,10 +1,10 @@
 $(document).ready(function () {
   $("#add-landmark").click(function() {
-    $("#new-landmark").append('div-class="new"' +
+    $("#new-landmarks").append('<div class="new-landmark">' +
     '<div class ="form-group">' +
-      '<label for="new-landmark">Landmark</label>' +
-      '<input type ="text" class=form-control new-landmark'> +
-    '<div>');
+      '<label for="new-landmark-name">Landmark Name</label>' +
+      '<input type ="text" class="form-control new-landmark-name">' +
+    '</div>');
   });
 
   $("form#new-place").submit(function(event) {
@@ -41,7 +41,7 @@ $(".new-landmark").each(function() {
       $(".notes").text(newPlace.notes);
 
       $("ul#landmarks").text("");
-      newplaces.landmark.forEach(function(landmark) {
+      newPlace.landmarks.forEach(function(landmark) {
         $("ul#landmarks").append("<li>" + landmark.landmarkName + ", " + landmark.landmarkDesc + "</li>");
       });
     });
